@@ -1,0 +1,16 @@
+title: Lars Schultz Hansen
+description: Data & Analytics Director | Retail Industry Expert
+url: "https://schultzhansen.dk"
+baseurl: ""
+author: Lars Schultz Hansen
+linkedin: lars-schultz-hansen-97a7113
+
+plugins:
+  - jekyll-feed
+
+markdown: kramdown
+permalink: /articles/:title/
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
