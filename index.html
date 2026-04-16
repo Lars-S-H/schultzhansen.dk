@@ -3,211 +3,69 @@ layout: default
 title: Home
 ---
 
-<!-- Hero -->
-<section style="background: var(--bg-warm);">
+<!-- ── Hero ── -->
+<section style="background: var(--bg);">
   <div class="hero">
-    <div class="hero-left">
-      <p class="hero-eyebrow">Data &amp; Analytics Director</p>
-      <h1>Lars Schultz<br>Hansen</h1>
-      <p class="hero-subtitle">
-        I help retail organisations turn data and AI into competitive advantage —
-        combining 15+ years of hands-on expertise with deep retail domain knowledge.
+    <div class="hero-left reveal">
+      <p class="hero-kicker">Copenhagen, Denmark</p>
+      <h1>Lars<br>Schultz<br>Hansen</h1>
+      <p class="hero-tagline">
+        Data &amp; Analytics Director helping retail organisations turn data and AI into competitive advantage.
       </p>
-      <div>
-        <a href="#about" class="btn">About me</a>
-        <a href="https://www.linkedin.com/in/lars-schultz-hansen-97a7113/" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+      <div class="hero-cta">
+        <a href="#about" class="btn-primary">About me</a>
+        <a href="https://www.linkedin.com/in/lars-schultz-hansen-97a7113/" target="_blank" rel="noopener" class="btn-ghost">LinkedIn ↗</a>
       </div>
     </div>
-    <div class="hero-image-wrap">
+    <div class="hero-portrait reveal delay-2">
       <img
         src="{{ '/assets/images/profile.jpg' | relative_url }}"
         alt="Lars Schultz Hansen"
-        class="hero-photo"
-        onerror="this.style.display='none'"
+        onerror="this.parentElement.style.display='none'"
       />
     </div>
   </div>
 </section>
 
-<!-- Stats -->
-<div class="stats-strip">
-  <div class="stats-inner">
-    <div>
-      <div class="stat-number">15+</div>
-      <div class="stat-label">Years in Data &amp; AI</div>
-    </div>
-    <div>
-      <div class="stat-number">22+</div>
-      <div class="stat-label">Data professionals led</div>
-    </div>
-    <div>
-      <div class="stat-number">0→20</div>
-      <div class="stat-label">Built a data company</div>
-    </div>
-    <div>
-      <div class="stat-number">Retail</div>
-      <div class="stat-label">Core industry focus</div>
-    </div>
-  </div>
-</div>
-
-<!-- About -->
-<section id="about" class="page-section bg-white">
+<!-- ── 01 About ── -->
+<section id="about" class="page-section bg-surface">
   <div class="section-inner">
-    <p class="section-label">About</p>
-    <div class="about-text">
-      <p>
-        With 15+ years in data &amp; analytics, I've built and led data functions at some of the Nordics' most recognised brands, including Pandora, where I established the Retail BI team from scratch. Today, as Director at Inspari, I lead the firm's Retail Data &amp; AI vertical, advising clients on data strategy, platform architecture, and AI-powered analytics solutions that drive measurable business outcomes.
-      </p>
-      <p>
-        Retail is where I'm most at home. I understand the business pressures: margin, inventory, customer behaviour, omnichannel complexity. And I know how to apply data and AI to decisions that actually move the needle — from demand forecasting and assortment optimisation to real-time operational insights.
-      </p>
-      <p>
-        My background spans both sides of the table: senior roles inside major retail organisations, and as a consultant and co-founder who built a data company from 0 to 20 people. This gives me an unusually direct understanding of what actually works — not just what looks good in a slide deck.
-      </p>
-    </div>
-    <div class="expertise-list">
-      <span class="tag">Retail Analytics &amp; AI</span>
-      <span class="tag">Data Strategy</span>
-      <span class="tag">Microsoft Fabric</span>
-      <span class="tag">Databricks</span>
-      <span class="tag">Power BI</span>
-      <span class="tag">Platform Architecture</span>
-      <span class="tag">Team Building</span>
-      <span class="tag">Executive Advisory</span>
-    </div>
-  </div>
-</section>
 
-<!-- Image break -->
-<div class="image-section">
-  <div class="image-section-text">
-    <blockquote>"The organisations making real progress with data don't start with technology — they start with the decisions that matter."</blockquote>
-    <cite>Lars Schultz Hansen</cite>
-  </div>
-</div>
-
-<!-- Experience -->
-<section class="page-section bg-warm">
-  <div class="section-inner wide">
-    <p class="section-label">Experience</p>
-
-    <div class="experience-group">
-      <div class="exp-company-col">
-        <div class="company-name">Inspari A/S</div>
-        <div class="company-period">2024 – Present</div>
-      </div>
-      <div class="role-list">
-        <div class="role">
-          <div class="role-title">Director, Retail Data &amp; AI</div>
-          <div class="role-meta">Apr 2026 – Present</div>
-          <div class="role-desc">Leading Inspari's Retail Data &amp; AI vertical. Responsible for go-to-market strategy, positioning, and service offerings within retail and consumer industries. Member of Valantic's European Retail Practice steering group. Combines industry leadership, people leadership (CYOL), and direct client advisory across data strategy, platform architecture, and AI solutions.</div>
-        </div>
-        <div class="role">
-          <div class="role-title">Director, Business Analytics</div>
-          <div class="role-meta">Sep 2024 – Apr 2026</div>
-          <div class="role-desc">Strengthening Inspari's position within Data &amp; AI through pre-sales, solution scoping, and advisory for new and existing clients. Acting subject matter expert within the retail domain — helping clients translate business challenges into actionable data solutions using Microsoft Fabric, Databricks, and Power BI.</div>
-        </div>
-      </div>
+    <div class="section-header reveal">
+      <span class="section-number">01</span>
+      <h2 class="section-title">About</h2>
+      <div class="section-divider"></div>
     </div>
 
-    <div class="experience-group">
-      <div class="exp-company-col">
-        <div class="company-name">Pandora</div>
-        <div class="company-period">Dec 2024 – Jul 2025</div>
+    <div class="about-grid">
+      <div class="about-portrait reveal">
+        <img
+          src="{{ '/assets/images/profile.jpg' | relative_url }}"
+          alt="Lars Schultz Hansen"
+          onerror="this.style.display='none'"
+        />
+        <div class="about-portrait-name">Lars Schultz Hansen</div>
+        <div class="about-portrait-title">Director, Retail Data &amp; AI<br>Inspari A/S</div>
       </div>
-      <div class="role-list">
-        <div class="role">
-          <div class="role-title">Product Manager, Supply &amp; Distribution Analytics</div>
-          <div class="role-meta">Via Inspari · Copenhagen</div>
-          <div class="role-desc">Leading three agile product teams (22+ data professionals) focused on analytics solutions for the world's largest jewellery brand's global supply chain and distribution operations. Strategic bridge between data teams and business stakeholders, supporting Pandora's SAP S/4HANA and O9 transformation.</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="experience-group">
-      <div class="exp-company-col">
-        <div class="company-name">Junu.io</div>
-        <div class="company-period">Feb 2019 – Sep 2024</div>
-      </div>
-      <div class="role-list">
-        <div class="role">
-          <div class="role-title">COO &amp; Co-founder</div>
-          <div class="role-meta">Jan 2023 – Sep 2024</div>
-          <div class="role-desc">Defining and executing strategic direction for the data &amp; analytics consultancy and software company. Led client management, project delivery, Customer Success, Product Management, and financial operations. Grew from 0 to 20 people.</div>
-        </div>
-        <div class="role">
-          <div class="role-title">CPO &amp; Co-founder</div>
-          <div class="role-meta">Feb 2019 – Jan 2023</div>
-          <div class="role-desc">Co-founded Junu.io and led product vision, strategy, roadmap, and go-to-market. Responsible for pricing, product marketing, and hands-on delivery of analytics consultancy in the Microsoft stack (Fabric, Power Platform, Azure Data Factory, SQL Server).</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="experience-group">
-      <div class="exp-company-col">
-        <div class="company-name">Inspari A/S</div>
-        <div class="company-period">Jun 2016 – Jan 2019</div>
-      </div>
-      <div class="role-list">
-        <div class="role">
-          <div class="role-title">Principal Consultant</div>
-          <div class="role-meta">Mar 2018 – Jan 2019</div>
-          <div class="role-desc">Advising clients on data strategy and implementing modern data platform architectures. Hands-on development in Power BI, Power Platform, Qlik Sense, and Tableau across retail, fashion, professional services, energy, and media.</div>
-        </div>
-        <div class="role">
-          <div class="role-title">Senior BI Consultant · Consultant</div>
-          <div class="role-meta">Jun 2016 – Mar 2018</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="experience-group">
-      <div class="exp-company-col">
-        <div class="company-name">PANDORA</div>
-        <div class="company-period">Jul 2009 – Oct 2014</div>
-      </div>
-      <div class="role-list">
-        <div class="role">
-          <div class="role-title">Manager, Retail BI</div>
-          <div class="role-meta">Feb 2014 – Oct 2014</div>
-          <div class="role-desc">Led the global Retail BI team — established the function from scratch. Responsible for data, applications, and technology supporting Retail, Sales, and Merchandising globally.</div>
-        </div>
-        <div class="role">
-          <div class="role-title">Business Analyst, Group BI</div>
-          <div class="role-meta">Feb 2012 – Feb 2014</div>
-          <div class="role-desc">Planning and implementing BI solutions across Pandora's global Supply Chain and Finance organisation. QlikView front-end development and cross-functional project management across the full value chain.</div>
-        </div>
-        <div class="role">
-          <div class="role-title">Group Business Controller</div>
-          <div class="role-meta">Jul 2009 – Feb 2012</div>
-          <div class="role-desc">Supporting Board of Directors and Executive Management with business insights and analysis. Participated in the PANDORA IPO and initial setup of the BI department.</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="experience-group">
-      <div class="exp-company-col">
-        <div class="company-name">Dyrberg/Kern</div>
-        <div class="company-period">Jun 2008 – Jun 2009</div>
-      </div>
-      <div class="role-list">
-        <div class="role">
-          <div class="role-title">Retail Business Analyst</div>
-          <div class="role-desc">Sales reporting, global KPI program, financial tools, and statistical analysis across 100 concept stores in 23 countries.</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="experience-group">
-      <div class="exp-company-col">
-        <div class="company-name">Askmebluu</div>
-        <div class="company-period">Sep 2005 – Jun 2008</div>
-      </div>
-      <div class="role-list">
-        <div class="role">
-          <div class="role-title">Consultant / Junior Consultant</div>
-          <div class="role-desc">Boutique consultancy in product and concept development for the fashion industry. International consumer panel management and quantitative research across Europe for clients including Marc O'Polo, Ecco, and Bianco Footwear.</div>
+      <div class="about-text reveal delay-1">
+        <p>
+          I help retail organisations turn data and AI into competitive advantage — combining deep retail domain knowledge with hands-on expertise in modern data platforms.
+        </p>
+        <p>
+          With 15+ years in data &amp; analytics, I've built and led data functions at some of the Nordics' most recognised brands, including Pandora, where I established the Retail BI team from scratch. Today, as Director at Inspari, I lead the firm's Retail Data &amp; AI vertical, advising clients on data strategy, platform architecture, and AI-powered analytics.
+        </p>
+        <p>
+          My background spans both sides of the table: senior roles inside major retail organisations, and as a consultant and co-founder who built a data company from 0 to 20 people. This gives me an unusually direct understanding of what actually works — not just what looks good in a slide deck.
+        </p>
+        <div class="tags">
+          <span class="tag">Retail Analytics</span>
+          <span class="tag">AI Strategy</span>
+          <span class="tag">Microsoft Fabric</span>
+          <span class="tag">Databricks</span>
+          <span class="tag">Power BI</span>
+          <span class="tag">Data Strategy</span>
+          <span class="tag">Team Leadership</span>
+          <span class="tag">Executive Advisory</span>
         </div>
       </div>
     </div>
@@ -215,23 +73,178 @@ title: Home
   </div>
 </section>
 
-<!-- Education -->
-<section class="page-section bg-white">
+<!-- ── Image break ── -->
+<div class="img-break">
+  <div class="img-break-content">
+    <div class="img-break-inner reveal">
+      <div class="img-break-label">Retail &amp; Data</div>
+      <blockquote>
+        "The organisations making real progress with data don't start with technology — they start with the decisions that matter."
+      </blockquote>
+    </div>
+  </div>
+</div>
+
+<!-- ── 02 Experience ── -->
+<section class="page-section bg-default">
   <div class="section-inner">
-    <p class="section-label">Education</p>
-    <div class="edu-item">
-      <div>
+
+    <div class="section-header reveal">
+      <span class="section-number">02</span>
+      <h2 class="section-title">Experience</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="tl-left">
+          <div class="tl-company">Inspari A/S</div>
+          <div class="tl-period">2024 – Present</div>
+        </div>
+        <div class="tl-roles">
+          <div>
+            <div class="tl-role-title">Director, Retail Data &amp; AI</div>
+            <div class="tl-role-period">Apr 2026 – Present</div>
+            <div class="tl-role-desc">Leading Inspari's Retail Data &amp; AI vertical. Responsible for go-to-market strategy, vertical positioning, and service offerings within retail and consumer industries. Member of Valantic's European Retail Practice steering group. Combines industry leadership, people leadership, and direct client advisory.</div>
+          </div>
+          <div>
+            <div class="tl-role-title">Director, Business Analytics</div>
+            <div class="tl-role-period">Sep 2024 – Apr 2026</div>
+            <div class="tl-role-desc">Strategic and hands-on client engagement focused on pre-sales, data strategy advisory, and retail domain expertise. Deep expertise in Microsoft Fabric, Databricks, and Power BI.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="tl-left">
+          <div class="tl-company">Pandora</div>
+          <div class="tl-period">Dec 2024 – Jul 2025</div>
+        </div>
+        <div class="tl-roles">
+          <div>
+            <div class="tl-role-title">Product Manager, Supply &amp; Distribution Analytics</div>
+            <div class="tl-role-period">Via Inspari · Copenhagen</div>
+            <div class="tl-role-desc">Leading three agile product teams (22+ data professionals) delivering analytics solutions for the world's largest jewellery brand's global supply chain and distribution operations. Supporting Pandora's SAP S/4HANA and O9 transformation.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="tl-left">
+          <div class="tl-company">Junu.io</div>
+          <div class="tl-period">Feb 2019 – Sep 2024</div>
+        </div>
+        <div class="tl-roles">
+          <div>
+            <div class="tl-role-title">COO &amp; Co-founder</div>
+            <div class="tl-role-period">Jan 2023 – Sep 2024</div>
+            <div class="tl-role-desc">Defining and executing strategic direction. Led client management, project delivery, and financial operations. Oversaw Implementation, Customer Success, and Product Management departments.</div>
+          </div>
+          <div>
+            <div class="tl-role-title">CPO &amp; Co-founder</div>
+            <div class="tl-role-period">Feb 2019 – Jan 2023</div>
+            <div class="tl-role-desc">Co-founded Junu.io, growing from 0 to 20 people. Led product vision, strategy, roadmap, and hands-on analytics consultancy in the Microsoft stack.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="tl-left">
+          <div class="tl-company">Inspari A/S</div>
+          <div class="tl-period">Jun 2016 – Jan 2019</div>
+        </div>
+        <div class="tl-roles">
+          <div>
+            <div class="tl-role-title">Principal Consultant</div>
+            <div class="tl-role-period">Mar 2018 – Jan 2019</div>
+            <div class="tl-role-desc">Data strategy advisory and modern data platform implementation across retail, fashion, professional services, energy, and media clients.</div>
+          </div>
+          <div>
+            <div class="tl-role-title">Senior BI Consultant · Consultant</div>
+            <div class="tl-role-period">Jun 2016 – Mar 2018</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="tl-left">
+          <div class="tl-company">PANDORA</div>
+          <div class="tl-period">Jul 2009 – Oct 2014</div>
+        </div>
+        <div class="tl-roles">
+          <div>
+            <div class="tl-role-title">Manager, Retail BI</div>
+            <div class="tl-role-period">Feb 2014 – Oct 2014</div>
+            <div class="tl-role-desc">Established and led the global Retail BI team from scratch. Responsible for data, applications, and technology supporting Retail, Sales, and Merchandising globally.</div>
+          </div>
+          <div>
+            <div class="tl-role-title">Business Analyst, Group BI</div>
+            <div class="tl-role-period">Feb 2012 – Feb 2014</div>
+            <div class="tl-role-desc">BI solutions across Pandora's global Supply Chain and Finance organisation. QlikView development and cross-functional project management.</div>
+          </div>
+          <div>
+            <div class="tl-role-title">Group Business Controller</div>
+            <div class="tl-role-period">Jul 2009 – Feb 2012</div>
+            <div class="tl-role-desc">Supporting Board and Executive Management with business insights. Participated in the PANDORA IPO and initial setup of the BI department.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="tl-left">
+          <div class="tl-company">Dyrberg/Kern</div>
+          <div class="tl-period">Jun 2008 – Jun 2009</div>
+        </div>
+        <div class="tl-roles">
+          <div>
+            <div class="tl-role-title">Retail Business Analyst</div>
+            <div class="tl-role-desc">Sales reporting, global KPI program, and financial tools across 100 concept stores in 23 countries.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="tl-left">
+          <div class="tl-company">Askmebluu</div>
+          <div class="tl-period">Sep 2005 – Jun 2008</div>
+        </div>
+        <div class="tl-roles">
+          <div>
+            <div class="tl-role-title">Consultant · Junior Consultant</div>
+            <div class="tl-role-desc">Boutique fashion industry consultancy. International consumer research across Europe for clients including Marc O'Polo, Ecco, and Bianco Footwear.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── 03 Education ── -->
+<section class="page-section bg-alt">
+  <div class="section-inner">
+
+    <div class="section-header reveal">
+      <span class="section-number">03</span>
+      <h2 class="section-title">Education</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="edu-grid reveal">
+      <div class="edu-card">
+        <div class="edu-degree">MSc</div>
         <div class="edu-school">Copenhagen Business School</div>
-        <div class="edu-degree">MSc, Marketing Economics</div>
+        <div class="edu-field">Marketing Economics</div>
+        <div class="edu-years">2005 – 2007</div>
       </div>
-      <span class="edu-years">2005 – 2007</span>
-    </div>
-    <div class="edu-item">
-      <div>
+      <div class="edu-card">
+        <div class="edu-degree">Bachelor</div>
         <div class="edu-school">Aarhus University</div>
-        <div class="edu-degree">Bachelor, Business Administration</div>
+        <div class="edu-field">Business Administration</div>
+        <div class="edu-years">2002 – 2005</div>
       </div>
-      <span class="edu-years">2002 – 2005</span>
     </div>
+
   </div>
 </section>

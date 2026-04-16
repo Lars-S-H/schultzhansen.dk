@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <title>{% if page.title and page.title != 'Home' %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>L</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%232c2825'>L</text></svg>" />
 </head>
 <body>
 
@@ -15,15 +15,13 @@
       <a href="{{ '/' | relative_url }}" class="nav-logo">Lars Schultz Hansen</a>
       <ul class="nav-links">
         <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
-        <li><a href="{{ '/articles' | relative_url }}" {% if page.url contains '/articles' %}class="active"{% endif %}>Articles</a></li>
-        <li><a href="https://www.linkedin.com/in/lars-schultz-hansen-97a7113/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="{{ '/articles' | relative_url }}" {% if page.url contains '/articles' or page.layout == 'post' %}class="active"{% endif %}>Articles</a></li>
+        <li><a href="https://www.linkedin.com/in/lars-schultz-hansen-97a7113/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
       </ul>
     </div>
   </nav>
 
-  <main>
-    {{ content }}
-  </main>
+  <main>{{ content }}</main>
 
   <footer>
     <div class="footer-inner">
@@ -31,6 +29,18 @@
       <a href="https://www.linkedin.com/in/lars-schultz-hansen-97a7113/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.08 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
 
 </body>
 </html>

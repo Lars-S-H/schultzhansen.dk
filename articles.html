@@ -4,17 +4,19 @@ title: Articles
 description: Thoughts on data, AI, and retail by Lars Schultz Hansen
 ---
 
-<div class="articles-hero">
-  <h1>Articles</h1>
-  <p>Thoughts on data, AI, and retail</p>
+<div class="articles-header">
+  <div class="articles-header-inner reveal">
+    <h1>Articles</h1>
+    <p>Thoughts on data, AI, and retail</p>
+  </div>
 </div>
 
-<div style="padding: 3rem 0 5rem;">
+<div style="padding: 1rem 0 6rem;">
   {% if site.posts.size > 0 %}
     <div class="articles-list">
       {% for post in site.posts %}
-        <a href="{{ post.url | relative_url }}" class="article-item">
-          <div class="article-meta">{{ post.date | date: "%B %-d, %Y" }}</div>
+        <a href="{{ post.url | relative_url }}" class="article-item reveal">
+          <div class="article-date">{{ post.date | date: "%B %-d, %Y" }}</div>
           <div class="article-title">{{ post.title }}</div>
           {% if post.excerpt %}
             <div class="article-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</div>
