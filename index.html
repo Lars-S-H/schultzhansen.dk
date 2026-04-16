@@ -4,29 +4,23 @@ title: Home
 ---
 
 <!-- ── Hero ── -->
-<div class="hero">
-  <div class="hero-left reveal">
-    <p class="hero-kicker">Copenhagen, Denmark</p>
+<section class="hero">
+  <img class="hero-bg" src="{{ '/assets/images/hero.jpg' | relative_url }}" alt="" />
+  <div class="hero-overlay"></div>
+  <div class="hero-content reveal">
+    <p class="hero-kicker">Data &amp; Analytics Director — Copenhagen</p>
     <h1>Lars<br>Schultz<br>Hansen</h1>
-    <p class="hero-tagline">
-      Data &amp; Analytics Director helping retail organisations turn data and AI into competitive advantage.
-    </p>
-    <div class="hero-cta">
-      <a href="#about" class="btn-primary">About me</a>
-      <a href="https://www.linkedin.com/in/lars-schultz-hansen-97a7113/" target="_blank" rel="noopener" class="btn-ghost">LinkedIn ↗</a>
-    </div>
+    <p class="hero-tagline">Helping retail organisations turn data and AI into competitive advantage.</p>
+    <a href="#about" class="scroll-btn" aria-label="Scroll to about">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 2.5v11M3.5 9.5L8 14l4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
   </div>
-  <div class="hero-right">
-    <img
-      src="{{ '/assets/images/hero.jpg' | relative_url }}"
-      alt="Lars Schultz Hansen"
-      onerror="this.outerHTML='<div class=\'hero-right-placeholder\'></div>'"
-    />
-  </div>
-</div>
+</section>
 
 <!-- ── 01 About ── -->
-<section id="about" class="page-section bg-surface">
+<section id="about" class="page-section bg-surface" style="scroll-margin-top: 58px;">
   <div class="section-inner">
 
     <div class="section-header reveal">
@@ -84,7 +78,7 @@ title: Home
 </div>
 
 <!-- ── 02 Experience ── -->
-<section class="page-section bg-default">
+<section id="experience" class="page-section bg-default" style="scroll-margin-top: 58px;">
   <div class="section-inner">
 
     <div class="section-header reveal">
@@ -220,7 +214,7 @@ title: Home
 </section>
 
 <!-- ── 03 Education ── -->
-<section class="page-section bg-alt">
+<section id="education" class="page-section bg-alt" style="scroll-margin-top: 58px;">
   <div class="section-inner">
 
     <div class="section-header reveal">
