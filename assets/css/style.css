@@ -623,6 +623,9 @@ footer {
 
 /* ─── Responsive ─── */
 @media (max-width: 768px) {
+  .nav-logo { display: none; }
+  .nav-links { gap: 1.5rem; }
+
   .hero { min-height: 100svh; }
   .hero-content { padding: 0 1.5rem 3.5rem; }
 
