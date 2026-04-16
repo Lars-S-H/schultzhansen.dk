@@ -4,33 +4,25 @@ title: Articles
 description: Thoughts on data, AI, and retail by Lars Schultz Hansen
 ---
 
-<div class="container">
+<div class="articles-hero">
+  <h1>Articles</h1>
+  <p>Thoughts on data, AI, and retail</p>
+</div>
 
-  <div class="hero">
-    <div class="hero-text">
-      <h1>Articles</h1>
-      <p class="title">Thoughts on data, AI, and retail</p>
+<div style="padding: 3rem 0 5rem;">
+  {% if site.posts.size > 0 %}
+    <div class="articles-list">
+      {% for post in site.posts %}
+        <a href="{{ post.url | relative_url }}" class="article-item">
+          <div class="article-meta">{{ post.date | date: "%B %-d, %Y" }}</div>
+          <div class="article-title">{{ post.title }}</div>
+          {% if post.excerpt %}
+            <div class="article-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</div>
+          {% endif %}
+        </a>
+      {% endfor %}
     </div>
-  </div>
-
-  <section style="border-top: none; padding-top: 0;">
-    {% if site.posts.size > 0 %}
-      <div class="articles-list">
-        {% for post in site.posts %}
-          <a href="{{ post.url | relative_url }}" class="article-item">
-            <div class="article-title">{{ post.title }}</div>
-            <div class="article-meta">{{ post.date | date: "%B %-d, %Y" }}</div>
-            {% if post.excerpt %}
-              <div class="article-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</div>
-            {% endif %}
-          </a>
-        {% endfor %}
-      </div>
-    {% else %}
-      <div class="empty-state">
-        No articles yet — check back soon.
-      </div>
-    {% endif %}
-  </section>
-
+  {% else %}
+    <div class="empty-state">No articles yet — check back soon.</div>
+  {% endif %}
 </div>
