@@ -83,14 +83,38 @@ nav {
 /* ─── Hero ─── */
 .hero {
   min-height: calc(100vh - 58px);
-  background: var(--bg);
   display: grid;
-  grid-template-columns: 1fr 380px;
-  align-items: center;
-  max-width: var(--max);
-  margin: 0 auto;
-  padding: 6rem 2rem;
-  gap: 5rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero-left {
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6rem 4rem 6rem max(2rem, calc((100vw - var(--max)) / 2 + 2rem));
+}
+
+.hero-right {
+  position: relative;
+  overflow: hidden;
+  min-height: 480px;
+}
+
+.hero-right img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.hero-right-placeholder {
+  position: absolute;
+  inset: 0;
+  background: var(--bg-alt);
 }
 
 .hero-kicker {
@@ -148,52 +172,26 @@ nav {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   text-decoration: none;
-  transition: background 0.2s;
+  border-radius: 6px;
+  transition: background 0.2s, opacity 0.2s;
 }
 
-.btn-primary:hover { background: var(--dark); }
+.btn-primary:hover { opacity: 0.75; }
 
 .btn-ghost {
   display: inline-block;
-  color: var(--text);
+  color: var(--muted);
   padding: 0.75rem 0;
   font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
+  font-weight: 500;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   text-decoration: none;
-  border-bottom: 1px solid var(--border);
-  transition: border-color 0.2s, color 0.2s;
+  transition: color 0.2s;
 }
 
-.btn-ghost:hover { border-color: var(--text); }
+.btn-ghost:hover { color: var(--text); }
 
-/* Hero portrait */
-.hero-portrait {
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-.hero-portrait::before {
-  content: '';
-  position: absolute;
-  inset: -20px -20px -20px -20px;
-  background: var(--bg-alt);
-  border-radius: 2px;
-  z-index: 0;
-}
-
-.hero-portrait img {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  max-width: 320px;
-  aspect-ratio: 4/5;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
-}
 
 /* ─── Full-bleed image section ─── */
 .img-break {
@@ -611,13 +609,16 @@ footer {
   .hero {
     grid-template-columns: 1fr;
     min-height: auto;
-    padding: 4rem 1.5rem;
-    gap: 3rem;
   }
 
-  .hero-portrait { order: -1; }
-  .hero-portrait::before { display: none; }
-  .hero-portrait img { max-width: 220px; margin: 0 auto; aspect-ratio: 1; border-radius: 50%; }
+  .hero-left {
+    padding: 4rem 1.5rem;
+  }
+
+  .hero-right {
+    min-height: 300px;
+    order: -1;
+  }
 
   .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .about-portrait { display: grid; grid-template-columns: 100px 1fr; gap: 1.25rem; align-items: center; position: static; }
